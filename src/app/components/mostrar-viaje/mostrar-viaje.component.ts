@@ -64,7 +64,7 @@ export class MostrarViajeComponent implements OnInit {
   correo(){
     let email = {
      to: 'g.gaggero@duocuc.cl',
-     cc: '',
+     cc: 'gina.gaggero@gmail.com',
      attachments: [],
      subject: 'Reserva de viaje',
      body: 'Usted ha reservado un viaje en TeLlevoAPP',

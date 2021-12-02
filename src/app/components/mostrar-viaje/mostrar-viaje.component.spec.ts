@@ -5,6 +5,7 @@ import { MostrarViajeComponent } from './mostrar-viaje.component';
 
 import { RouterTestingModule } from '@angular/router/testing';
 import { Storage } from '@ionic/storage';
+import { EmailComposer } from '@ionic-native/email-composer/ngx';
 
 describe('MostrarViajeComponent', () => {
   let component: MostrarViajeComponent;
@@ -15,8 +16,7 @@ describe('MostrarViajeComponent', () => {
       declarations: [ MostrarViajeComponent ],
       imports: [IonicModule.forRoot(), RouterTestingModule],
       providers: [{
-        provide: Storage 
-      }]
+        provide: Storage}, EmailComposer]
     }).compileComponents();
 
     fixture = TestBed.createComponent(MostrarViajeComponent);
