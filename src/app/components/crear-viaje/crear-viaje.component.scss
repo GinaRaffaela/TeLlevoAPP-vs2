@@ -1,0 +1,56 @@
+ion-title{
+    text-align: center;
+}
+
+
+ion-input{
+    border-bottom: 100px;
+    text-align: center;
+}
+
+ion-select-option{
+    text-align: center;
+}
+
+
+
+ion-label{
+    font-size: 10px;
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    font-size: 38px;
+    padding-top: 80px;
+}
+
+.op-form{
+    padding-top: 25px;
+}
+
+
+.full-width-item {
+    width: 90%;
+    border-bottom: 2px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.half-width-item {
+    display: inline-block;
+    width: 40%;
+    border-bottom: 2px;
+    margin: 0 5%;
+}
+
+.btn-primario{
+    --border-radius: 5px;
+    text-transform: none;
+    text-align: center;
+}
+
+.btn-cancelar{
+    text-transform: none;
+    text-align: center;
+}

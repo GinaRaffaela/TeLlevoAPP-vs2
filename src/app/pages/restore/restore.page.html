@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+  
+<ion-content>
+  <div class="logo">
+    <img src='/assets/img/logo2.png'>
+  </div>
+
+ <ion-item lines="full">
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input required [(ngModel)]="usuario"  position="floating"> </ion-input>
+        
+        
+        
+  </ion-item>
+    
+ <ion-row>
+    <ion-col>
+            
+      <ion-button expand="full" (click)="recuperar()">Recuperar clave</ion-button>
+
+    </ion-col>
+  </ion-row>
+
+  
+</ion-content>

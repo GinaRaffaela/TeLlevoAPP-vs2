@@ -1,0 +1,42 @@
+<ion-content>
+
+  <ion-item color="none" lines="none">
+    <ion-label position="stacked">Selecciona tu sede</ion-label>
+    <ion-select interface="popover" color="none" #txtSede>
+      <ion-select-option value="Sede Viña del mar">Sede Viña del Mar</ion-select-option>
+      <ion-select-option value="Sede Valparaiso">Sede Valparaiso</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+<ion-item class="full-width-item ion-no-padding" lines="none">
+<ion-label position="stacked">Destino</ion-label>
+<ion-input type="text" placeholder="Escriba su destino de viaje" #txtDestino></ion-input>
+</ion-item>
+<ion-item class="half-width-item ion-no-padding" lines="none">
+<ion-label position="stacked">Tarifa</ion-label>
+<ion-input type="text" placeholder="$$$" #txtTarifa></ion-input>
+</ion-item>
+<ion-item class="half-width-item ion-no-padding" lines="none">
+<ion-label position="stacked">Cantidad de Pasajeros</ion-label>
+<ion-input type="number" placeholder="1" #txtPasajero></ion-input>
+</ion-item>
+<ion-item class="half-width-item ion-no-padding" lines="none">
+<ion-label position="stacked">Hora salida</ion-label>
+<ion-input type="text" placeholder="19:15" #txtHora></ion-input>
+</ion-item>
+<ion-item class="half-width-item ion-no-padding" lines="none">
+<ion-label position="stacked">Mi patente</ion-label>
+<ion-input type="text" placeholder="" #txtPatente></ion-input>
+</ion-item>
+
+
+</ion-content>
+
+<ion-row class="ion-justify-content-center">
+<ion-col size="5">
+  <ion-button class="btn-cancelar" fill="clear"  expand="block" (click)="atras()" >Cancelar</ion-button>
+</ion-col>
+<ion-col size="5">
+  <ion-button class="btn-primario" type="submit"  expand="block" (click)="agregar(txtSede, txtDestino, txtTarifa, txtPasajero, txtHora, txtPatente)">Crear</ion-button>
+</ion-col>
+</ion-row>

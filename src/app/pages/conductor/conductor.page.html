@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar class="ion-text-end">
+  <!--<ion-back-button (click)="atras()" class="atras"></ion-back-button> -->
+    <ion-icon (click)="salir()" class="salir" name="exit-outline"></ion-icon>
+  </ion-toolbar>
+  
+</ion-header>
+  
+ <ion-content> 
+  <app-mapbox></app-mapbox>
+</ion-content>
+<ion-content>
+  <ion-title>Crea tu viaje</ion-title>
+  <app-crear-viaje></app-crear-viaje>
+</ion-content>
+
+  <!-- <ion-button expand="full" color="primary" (click)="publicarViaje()">Publicar Viaje</ion-button>-->
+
+
+
+ 
+

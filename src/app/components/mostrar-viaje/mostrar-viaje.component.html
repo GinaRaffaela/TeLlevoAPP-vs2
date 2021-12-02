@@ -1,0 +1,32 @@
+  <ion-row *ngIf="listado.length > 0">
+    <ion-col size="6" *ngFor="let item of listado">
+      <ion-card>
+        <ion-text>Conductor</ion-text>
+        <ion-card-title class="margen" >Gina Gaggero</ion-card-title>
+        <ion-text>Patente del vehiculo</ion-text>
+        <ion-card-title class="margen" >{{item[0].Patente}}</ion-card-title>
+        <ion-text>Desde</ion-text>
+        <ion-card-title class="margen" >{{item[0].Origen}}</ion-card-title>
+        <ion-text>Hasta</ion-text>
+        <ion-card-title>{{item[0].Destino}}</ion-card-title>
+        <ion-text>Costo de viaje</ion-text>
+        <ion-card-title>{{item[0].Tarifa}}</ion-card-title>
+        <ion-text>Cantidad maxima de pasajeros</ion-text>
+        <ion-card-title>{{item[0].Pasajero}}</ion-card-title>
+        <ion-text>Hora de salida</ion-text>
+        <ion-card-title>{{item[0].Hora}}</ion-card-title>
+          <ion-button class="btn-primario" type="submit" (click)="solicitar()">Solicitar viaje</ion-button>  
+        <ion-card-content></ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row class="ion-justify-content-center">
+
+    <ion-col size="5">
+      <ion-button class="btn-cancelar" fill="clear"  expand="block" (click)="atras()" >Cancelar</ion-button>
+    </ion-col>
+    <ion-col size="5">
+      <ion-button class="btn-primario" expand="block" (click)="list()">Buscar viaje</ion-button>
+    </ion-col>
+  </ion-row>

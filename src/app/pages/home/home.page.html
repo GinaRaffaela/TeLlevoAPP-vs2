@@ -1,0 +1,53 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title size="medium">TeLlevoAPP</ion-title>
+  </ion-toolbar>
+
+    <ion-toolbar class="ion-text-end">
+        <ion-icon (click)="salir()" class="salir" name="exit-outline"></ion-icon>
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+
+  </ion-header>
+
+  <ion-card>
+
+    <ion-card-content>
+
+      <ion-item lines="none">
+
+        <ion-label >Bienvenid@ {{this.userName}}</ion-label> <!-- Se imprime el nombre de usuario en el saludo -->
+      </ion-item>
+      <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1606/tuktukdesign160600119/59070200-icono-de-usuario-hombre-perfil-hombre-de-negocios-avatar-icono-persona-en-la-ilustraci%C3%B3n-vectorial.jpg?ver=6">
+      </ion-avatar>
+      <ion-label>{{data}}</ion-label>
+    </ion-item>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-item lines="none">
+        <h2 >¿Eres pasajero o conductor?</h2>
+
+      </ion-item>
+        <ion-button expand="full" (click)="pasajero()">Pasajero</ion-button>
+        <ion-button expand="full" (click)="conductor()">Conductor</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item lines="none">
+        <h2 >¿Ooooops?</h2>
+    </ion-item>
+  <ion-button expand="full" (click)="oops()">Oops</ion-button>
+  </ion-card>
+</ion-content>

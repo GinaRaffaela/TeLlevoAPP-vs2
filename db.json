@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Gina Gaggero",
+      "email": "g.gaggero@duocuc.cl",
+      "user": "g.gaggero",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "name": "Max Deila",
+      "email": "m.deila@duocuc.cl",
+      "user": "m.deila",
+      "password": "123"
+    }
+  ],
+  "cars": [
+    {
+      "carId": 1,
+      "userId": 2,
+      "brand": "Hyundai",
+      "model": "Accent",
+      "patent": "HWYH48",
+      "passangers": "4"
+    }
+  ]
+}
