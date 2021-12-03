@@ -44,6 +44,7 @@
     "@ng-web-apis/geolocation": "^1.0.4",
     "angular-animations": "^0.11.0",
     "animate.css": "^4.1.1",
+    "cordova-plugin-email-composer": "^0.10.0",
     "cordova-plugin-inappbrowser": "^5.0.0",
     "email-composer": "0.0.1",
     "jetifier": "^2.0.0",

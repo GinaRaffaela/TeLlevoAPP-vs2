@@ -26,7 +26,8 @@ export class MostrarViajeComponent implements OnInit {
   }
 
   solicitar(){
-    this.presentLoadingWithOptions() 
+    this.correo();
+    this.presentLoadingWithOptions(); 
     this.router.navigate(['/home']);
   }
   async presentAlert() {
@@ -67,7 +68,7 @@ export class MostrarViajeComponent implements OnInit {
      cc: 'gina.gaggero@gmail.com',
      attachments: [],
      subject: 'Reserva de viaje',
-     body: 'Usted ha reservado un viaje en TeLlevoAPP',
+     body: 'Usted ha reservado un viaje en TeLlevoAPP'+ localStorage.getItem('destino'),
      isHtml: true
     }
     this.emailComposer.open(email);
