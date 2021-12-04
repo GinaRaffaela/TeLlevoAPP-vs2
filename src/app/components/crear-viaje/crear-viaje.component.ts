@@ -60,4 +60,5 @@ export class CrearViajeComponent implements OnInit {
   atras(){
     this.router.navigate(['/home']);
   }
+  
 }
