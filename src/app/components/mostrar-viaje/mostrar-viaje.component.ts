@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EmailComposer } from '@ionic-native/email-composer/ngx';
 import { AlertController, LoadingController } from '@ionic/angular';
+import { Storage } from '@ionic/storage';
 import { ViajeService } from 'src/app/services/viaje.service';
 
 
@@ -14,6 +15,7 @@ export class MostrarViajeComponent implements OnInit {
 
   user: any;
   listado=[];
+  storage: any;
 
   constructor(private emailComposer: EmailComposer, private viaje: ViajeService, public alertCtrl: AlertController, private router: Router, public loadingController:LoadingController, private activeroute:ActivatedRoute) { 
 
@@ -63,12 +65,13 @@ export class MostrarViajeComponent implements OnInit {
   }
 
   correo(){
+    
     let email = {
      to: 'g.gaggero@duocuc.cl',
      cc: 'gina.gaggero@gmail.com',
      attachments: [],
      subject: 'Reserva de viaje',
-     body: 'Usted ha reservado un viaje en TeLlevoAPP'+ localStorage.getItem('destino'),
+     body: 'Usted ha reservado un viaje en TeLlevoAPP',
      isHtml: true
     }
     this.emailComposer.open(email);
