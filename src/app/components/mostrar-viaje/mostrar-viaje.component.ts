@@ -75,5 +75,19 @@ export class MostrarViajeComponent implements OnInit {
      isHtml: true
     }
     this.emailComposer.open(email);
-}
+  }
+
+//  async correo(){
+//    var feedback = document.createElement('mail');
+//    feedback.setAttribute('href', 
+//    'mailto:g.gaggero@duocuc.cl?subject=Usted%20ha%20reservado%20un%20viaje&body=Su%20viaje:'
+//    +'%20Origen:%20'+this.viaje.rescatar('Sede')
+//    +'%20Destino:%20'+this.viaje.rescatar('Destino')
+//    +'%20Tarifa:%20'+this.viaje.rescatar('Tarifa')
+//    +'%20Hora:%20'+this.viaje.rescatar('Hora')
+//    +'%20Patente:%20'+this.viaje.rescatar('Patente'));
+//    feedback.click();
+//    console.log('Se ha enviado una copia del viaje a su correo electronico');
+//  }
+
 }
